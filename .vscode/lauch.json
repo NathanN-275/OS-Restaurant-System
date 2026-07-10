@@ -1,0 +1,12 @@
+{
+    "version": "2.0.0",
+    "tasks": [{
+      "label": "build randword",
+      "type": "shell",
+      "command": "cc",
+      "args": ["-std=c11","-Wall","-Wextra","-O2","random.c","print_random_string.c","-o","randword"],
+      "group": {"kind":"build","isDefault": true},
+      "problemMatcher": "$gcc"
+    }]
+  }
+  
